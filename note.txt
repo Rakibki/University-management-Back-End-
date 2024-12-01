@@ -1,0 +1,7 @@
+requrment: https://docs.google.com/document/d/10mkjS8boCQzW4xpsESyzwCCLJcM3hvLghyD_TeXPBx0/edit?tab=t.0
+
+
+1. fuctional requrment
+2. date model
+3. ER Diagram 
+4. api desing
