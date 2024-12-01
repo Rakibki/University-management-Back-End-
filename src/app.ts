@@ -11,16 +11,16 @@ const app: Application = express();
 app.use(cors());
 app.use(express.json());
 
-app.use(mainRouter);
+app.use("/api/v1", mainRouter);
 
 app.get("/", (req: Request, res: Response) => {
   res.send("Hello World!");
 });
 
-//blobalErrorHanlder
+//global Error Handler
 app.use(globalErrorHandler);
 
-//Not Found
+//Not Found route
 app.use(notFound);
 
 export default app;

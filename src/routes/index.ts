@@ -6,11 +6,11 @@ const mainRouter = express.Router();
 
 const moduleRoutes = [
   {
-    path: "./users",
+    path: "/users",
     route: userRouter,
   },
   {
-    path: "./students",
+    path: "/students",
     route: studnetRouter,
   },
 ];
