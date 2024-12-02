@@ -29,7 +29,7 @@ const userNameSchema = z.object({
     address: z.string(),
   });
   
-  export const studentValidationSchema = z.object({
+  export const createStudentValidationSchema = z.object({
     id: z.string(),
     password: z.string().max(20),
     name: userNameSchema,
@@ -48,4 +48,6 @@ const userNameSchema = z.object({
     isDeleted: z.boolean().optional(),
   });
   
-  export default studentValidationSchema;
+  export const studentValidation = {
+    createStudentValidationSchema
+  }
